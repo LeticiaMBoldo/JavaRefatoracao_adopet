@@ -16,7 +16,7 @@ public class PetServiceTest {
     private ClientHTTPConfiguration client = mock(ClientHTTPConfiguration.class);
     private PetService petService = new PetService(client);
     private HttpResponse<String> response = mock(HttpResponse.class);
-    
+
     @Test
     public void deveVerificarSeDispararRequisicaoPostSeraChamado() throws IOException, InterruptedException {
         String userInput = String.format("Teste%spets.csv",
